@@ -15,9 +15,9 @@ class CreateTablePosts extends Migration
     {
         Schema::create('contents', function (Blueprint $table) {
             $table->increments('id');
-            $table->varchar('fullname');
-            $table->varchar('about');
-            $table->timestamps('birth');
+            $table->string('fullname');
+            $table->string('about');
+            $table->dateTime('birth',0);
         });
     }
 
